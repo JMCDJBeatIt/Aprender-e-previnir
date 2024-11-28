@@ -1,0 +1,90 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #5a67d8;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+}
+
+/* Barra de navegação */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #3c4aad;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+nav a:hover {
+    background-color: #293782;
+}
+
+/* Conteúdo principal */
+.container {
+    padding: 20px;
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo dos títulos dentro do conteúdo */
+h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Parágrafos */
+p {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* Rodapé */
+footer {
+    background-color: #5a67d8;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsividade para telas pequenas */
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        padding: 15px;
+        text-align: center;
+    }
+
+    .container {
+        padding: 15px;
+        width: 90%;
+    }
+}
